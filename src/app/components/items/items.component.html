@@ -1,0 +1,23 @@
+<!--
+<div>
+    <div *ngFor="let item of items">
+        {{item.title}}
+    </div>
+
+    <div *ngFor="let perro of perros">
+    {{perro.nombre}}
+    {{perro.edad}}
+    {{perro.color}}
+
+</div>
+
+</div>
+-->
+
+<div>
+    <app-item 
+    *ngFor="let item of items"
+    [item]="item"
+(deleteItem)="deleteItem($event)"></app-item>
+</div>
+<app-elemento></app-elemento>
